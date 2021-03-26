@@ -70,3 +70,11 @@ form
     border: 1px solid black;
     box-sizing: border-box;
 }
+
+.password {
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;  
+}
