@@ -49,13 +49,14 @@ body
   width: 60%;
   padding: 10px;
 }
-
+/* Mobiili */
 @media only screen and (max-width: 500px) {
   .main {
   flex: 100%;
   background-color: #CCC;
   padding: 20px;
   margin: 0;
+  font-size: 17px;
   }
 
   .row {
