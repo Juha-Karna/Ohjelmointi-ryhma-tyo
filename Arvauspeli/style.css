@@ -12,10 +12,10 @@ body
 
 .nappi {
     background-color: aqua;
-    padding: 20px;
+    padding: 30px;
     display: inline-block;
     cursor: pointer;
-    margin: 8px;
+    margin: 4px;
     font-size: 25px;
     font-family: 'Merriweather', serif;
     align-items: center;
