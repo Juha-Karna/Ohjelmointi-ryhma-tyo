@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./binary.gif");
+    background-repeat: no-repeat;
+    background-size: 190%;
+    margin: 0;
+}
+
+.nut {
+    color: white;
+}
+
+input {
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(43, 128, 226);
+    padding: 14px 20px;
+    margin: 8px 8px;
+    border: 1px solid black;
+    color: white;
+}
+.käännä {
+    padding: 8px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    flex: 100%;
+    background-color: #ccc;
+    padding: 20px;
+    font-size: 1.7vh;
+    background-size: cover;
+    background-image: url(./grey.png);
+    margin-left: 19vw;
+    margin-right: 19vw;
+    padding: 40px;
+    padding-bottom: 25.54vw;
+    margin-bottom: 0;
+}
+
+.header {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    background-color: black;
+    background-image: url("./math.gif");
+    background-size: auto;
+    background-repeat: round;
+  }
+
+.week {
+    font-size: 50px;
+}
+
+.perus {
+    font-size: 30px;
+}
+/* artikkelit 1, 2, 3, 4, 5. */
+
+#kaa {
+    position: absolute; 
+    left: 42vw;
+    bottom: 24.5vw;
+    margin-right: 0;
+}
+
+#koo {
+    position: absolute;
+    left: 61vw;
+    bottom: 24.5vw;
+    margin-right: 0;
+}
+
+#nee {
+    position: absolute;
+    left: 21vw;
+    bottom: -1vw;
+}
+
+#vii {
+    position: absolute;
+    left: 42vw;
+    bottom: 12.5vw;
+}
