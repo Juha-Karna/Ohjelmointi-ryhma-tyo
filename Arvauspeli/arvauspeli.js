@@ -28,8 +28,8 @@ function arvaa(arpa) {
     kerrat++;
     var arvaus = arpa.value;
 
-    //jos kerrat on pienempi tai yhtäsuurikun 10 (eli 10 arvauskertaa) 
-    if(kerrat <= 10) {
+    //jos kerrat on pienempi tai yhtäsuurikun 6 (eli 6 arvauskertaa) 
+    if(kerrat <= 6) {
         //silloin nämä alla olevat alkaa pyörimään.
         
         //jos arvaus on pienempi kuin vastaus: alert + 1 arvaus
@@ -37,12 +37,24 @@ function arvaa(arpa) {
             guess += 1;
             document.getElementById('guess').innerHTML = guess;
             alert('Liian pieni numero');
+            // piilottaa kaikki pienemmät luvut
+            var x = '';
+            for(var luvut = 1; luvut <= arvaus; luvut++) {
+                x = document.getElementsByName('' + luvut + '');
+                $(x).css('display','none');
+            }
         }
-        //Jos arvaus on isompi kuin vastaus: alert + 1 arvaus
+         //Jos arvaus on isompi kuin vastaus: alert + 1 arvaus
         else if(arvaus > vastaus) {
             guess += 1;
             document.getElementById('guess').innerHTML = guess;
             alert('Liian suuri numero');
+            // piilottaa kaikki isommat luvut
+            var x = '';
+            for(var luvut = 10; luvut >= arvaus; luvut--) {
+                x = document.getElementsByName('' + luvut + '');
+                $(x).css('display','none');
+            }
         }
         //Jos arvaus on = vastaus niin alert kuinka monta arvausta käytit ja sitten refresh page + 1 arvaus ja + 1 piste. Ja siirtää vastausta randomiin sijaintiin
         else if (arvaus == vastaus) {
@@ -55,6 +67,17 @@ function arvaa(arpa) {
             alert('Oikein, käytit ' + kerrat + ' kertaa');
             //siirtää vastausta
             newVastaus();
+            // Pienemmät vastaukset tulevat takaisin näkyviin.
+            var x = '';
+            for(var luvut = 1; luvut <= arvaus; luvut++) {
+                x = document.getElementsByName('' + luvut + '');
+                $(x).css('display','');
+            }
+            // Isommat vastaukset tulevat takaisin näkyviin
+            for(var luvut = 10; luvut >= arvaus; luvut--) {
+                x = document.getElementsByName('' + luvut + '');
+                $(x).css('display','');
+            }
         }
         // jos score = 3 =VICTORY
         if(score == 3) {
@@ -63,7 +86,7 @@ function arvaa(arpa) {
     }
     // Muulloin game over. ja refresh page
     else {
-        alert('Käytit kaikki 10 yritystä GAME OVER');
+        alert('Käytit kaikki 6 yritystä GAME OVER');
         location.reload();
     }
 }
