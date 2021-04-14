@@ -28,8 +28,8 @@ function arvaa(arpa) {
     kerrat++;
     var arvaus = arpa.value;
 
-    //jos kerrat on pienempi tai yhtäsuurikun 6 (eli 6 arvauskertaa) 
-    if(kerrat <= 6) {
+    //jos kerrat on pienempi tai yhtäsuurikun 9 (eli 9 arvauskertaa) 
+    if(kerrat <= 9) {
         //silloin nämä alla olevat alkaa pyörimään.
         
         //jos arvaus on pienempi kuin vastaus: alert + 1 arvaus
@@ -86,7 +86,7 @@ function arvaa(arpa) {
     }
     // Muulloin game over. ja refresh page
     else {
-        alert('Käytit kaikki 6 yritystä GAME OVER');
+        alert('Käytit kaikki 9 yritystä GAME OVER');
         location.reload();
     }
 }
