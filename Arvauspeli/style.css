@@ -42,6 +42,7 @@ body
   text-align: center;
   font-family: 'Oswald', sans-serif;
   font-size: 22px;
+  overflow: hidden;
 }
 
 #gameBoard {
@@ -49,6 +50,17 @@ body
   width: 60%;
   padding: 10px;
 }
+
+.piste {
+  float: right;
+  margin-right: 13vw;
+}
+
+.xarvaus {
+  float: left;
+  margin-left: 12vw;
+}
+
 /* Mobiili */
 @media only screen and (max-width: 500px) {
   .main {
@@ -71,5 +83,13 @@ body
     margin: 0;
     padding: 20px;
     border: 1px solid #ccc;
+  }
+
+  .piste {
+    margin: 0;
+  }
+
+  .xarvaus {
+    margin: 0;
   }
 }
