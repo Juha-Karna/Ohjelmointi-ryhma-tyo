@@ -41,7 +41,7 @@ function arvaa(arpa) {
             var x = '';
             for(var luvut = 1; luvut <= arvaus; luvut++) {
                 x = document.getElementsByName('' + luvut + '');
-                $(x).css('display','none');
+                $(x).css('visibility','hidden');
             }
         }
          //Jos arvaus on isompi kuin vastaus: alert + 1 arvaus
@@ -53,7 +53,7 @@ function arvaa(arpa) {
             var x = '';
             for(var luvut = 10; luvut >= arvaus; luvut--) {
                 x = document.getElementsByName('' + luvut + '');
-                $(x).css('display','none');
+                $(x).css('visibility','hidden');
             }
         }
         //Jos arvaus on = vastaus niin alert kuinka monta arvausta käytit ja sitten refresh page + 1 arvaus ja + 1 piste. Ja siirtää vastausta randomiin sijaintiin
@@ -71,12 +71,12 @@ function arvaa(arpa) {
             var x = '';
             for(var luvut = 1; luvut <= arvaus; luvut++) {
                 x = document.getElementsByName('' + luvut + '');
-                $(x).css('display','');
+                $(x).css('visibility','');
             }
             // Isommat vastaukset tulevat takaisin näkyviin
             for(var luvut = 10; luvut >= arvaus; luvut--) {
                 x = document.getElementsByName('' + luvut + '');
-                $(x).css('display','');
+                $(x).css('visibility','');
             }
         }
         // jos score = 3 =VICTORY
