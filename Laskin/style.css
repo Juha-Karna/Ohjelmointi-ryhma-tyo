@@ -16,6 +16,11 @@ body {
   font-size: 30px;
 }
 
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('./digital-7.ttf');
+   }
+
 .calculator-grid {
     width: 350px;
     height: 600px;
@@ -25,8 +30,10 @@ body {
     grid-template-rows: 100px 1fr;
     grid-template-columns: 1fr;
     margin: 0 auto;
+    margin-top: 7vw;
     background-color: white;
     border-radius: 8px;
+    font-family:'digital-clock-font';
 }
 
 .laskin-keys {
@@ -43,6 +50,16 @@ button {
     background-color: #ccc;
     font-size: large;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid black;
+    background-color: #696969;
+    -webkit-transition: background-color 1s ease-out;
+            -moz-transition: background-color 1s ease-out;
+            -o-transition: background-color 1s ease-out;
+            transition: background-color 1s ease-out; 
 }
 /* ____________________________________________________________________ */
 /* -------------------------button grid locations---------------------- */
@@ -56,7 +73,7 @@ button[name="="] {
 button[name="0"] {
     grid-column-start: 1;
     grid-column-end: 2;
-    width: 170%;
+    width: 190%;
 }
 
 button[name="."] {
