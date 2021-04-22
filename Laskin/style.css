@@ -61,6 +61,14 @@ button:hover {
             -o-transition: background-color 1s ease-out;
             transition: background-color 1s ease-out; 
 }
+
+@media only screen and (max-width: 500px) {
+  body {
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: cover;
+    }
+}
 /* ____________________________________________________________________ */
 /* -------------------------button grid locations---------------------- */
 
