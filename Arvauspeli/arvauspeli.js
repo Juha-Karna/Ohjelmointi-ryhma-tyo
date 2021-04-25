@@ -56,7 +56,7 @@ function arvaa(arpa) {
                 $(x).css('visibility','hidden');
             }
         }
-        //Jos arvaus on = vastaus niin alert kuinka monta arvausta käytit ja sitten refresh page + 1 arvaus ja + 1 piste. Ja siirtää vastausta randomiin sijaintiin
+        //Jos arvaus on = vastaus niin alert kuinka monta arvausta käytit ja + 1 arvaus ja + 1 piste. Ja siirtää vastausta randomiin sijaintiin
         else if (arvaus == vastaus) {
             // arvaus
             guess += 1;
@@ -79,7 +79,7 @@ function arvaa(arpa) {
                 $(x).css('visibility','');
             }
         }
-        // jos score = 3 =VICTORY
+        // jos score = 3 =VICTORY && refresh page
         if(score == 3) {
             timeMsg();
         }
