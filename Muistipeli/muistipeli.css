@@ -29,12 +29,18 @@ ul {
  h1 {
      font-size: 5rem;
      font-family: sans-serif;
+     color: #ffffff;
  }
 
  h2 {
      font-size: 2rem;
      font-family: sans-serif;
+     color: #ffffff;
  }
+
+p {
+  color:  #ffffff;
+}
 
 
  /* PELIALUE */
