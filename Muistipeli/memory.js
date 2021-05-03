@@ -98,7 +98,6 @@ var mem = {
                 mem.last = null;
                 score += 1;
                 document.getElementById('score').innerHTML = score;
-                plus();
                 if (mem.matches.length == mem.sets *2) {
                     timeMsg();
                 }
@@ -171,12 +170,5 @@ window.addEventListener("DOMContentLoaded", mem.preload);
             score -= 1;
             document.getElementById('score').innerHTML = score;
             }
-        }
-    }
-    // (H2) +1 PISTE KUN SAAT OIKEIN VIIDENNELLÄ KERRALLA (tapahtuu kohdassa D3)
-    function plus() {
-        if (kerrat % 5 == 0){
-            score += 1;
-            document.getElementById('score').innerHTML = score;
         }
     }
