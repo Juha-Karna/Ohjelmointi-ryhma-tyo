@@ -7,11 +7,12 @@ public class test {
 		Scanner in = new Scanner(System.in);
 		String upperCase;
 		//Nimet
-		String[] names = {"Moi Juha Kärnä","Moi Insert name here1", "Moi Insert name here2", "Moi Insert name here3" };
+		String[] names = {"Moi Juha KÃ¤rnÃ¤","Moi Insert name here1", "Moi Insert name here2", "Moi Insert name here3" };
 		System.out.println("Insert name here:");
 		String kirjoitettuNimi = in.nextLine();
 		upperCase = kirjoitettuNimi.toUpperCase();
-		if (upperCase.equals("JUHA KÄRNÄ")) {
+		
+		if (upperCase.equals("JUHA KÃ„RNÃ„")) {
 			System.out.println(names[0]);
 		}
 		else if(upperCase.equals("NYYMI1")) {
